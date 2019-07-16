@@ -1,0 +1,305 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+/*Nvabar Css*/
+.navback{
+    background-color: transparent;
+    height:100px;
+    z-index:401;
+    position:fixed;
+}
+#navcolorchange.scrolled {
+  background-color: #232428 !important;
+  transition: background-color 200ms linear;
+}
+.navbrand{
+    font-size:25px;
+    font-weight:800;
+    margin-left:-30px;
+}
+.navbar-toggler{
+    width: 47px;
+    height: 34px;
+    background-color: transparent;
+    border:none ;
+}
+.navbar-toggler .line{
+    width: 100%;
+    float: left;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+/* .navbrand:hover{
+    color:black
+} */
+
+
+@media only screen and (max-width: 600px) {
+    .navback{
+        height:auto;
+    }
+    .navbrand{
+        display:none;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .navbrand{
+        margin-left:-4px !important;
+    }
+}
+
+
+
+/*Main Css*/
+/* .backimage{
+    height:115vh;
+    background-image: linear-gradient(to bottom,#000000 ,rgba(0,0,0,0) 100%),url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+} */
+a{
+    color:white;
+    background-color:transparent !important;
+}
+a:hover{
+    color:white;
+}
+
+.content1{
+    height: 300px !important;
+    margin-top: 100px;
+ }
+.mainhead{
+    color:white;
+    background:#008BA0;
+    margin-top:350px;
+    text-align:center;
+}
+.row h2{
+    color:white;
+    text-align:center;
+}
+.specialcolor{
+    color:#008BA0;
+    font-weight:900;
+
+}
+.parallax {
+    /* The image used */
+    background-image: linear-gradient(to bottom,#000000 ,rgba(0, 0, 0, 0.548) 100%),url("images/background.jpg");
+  
+    /* Set a specific height */
+    min-height: 700px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.mainheading{
+    z-index: 6;
+    width: 791px; 
+    margin-top:-700px;
+}
+.border1{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    background-color: transparent;
+    margin-top:200px;
+    height:300px;
+    width:1000px;
+    margin-left:-140px;
+}
+.mainheadingalign{
+    margin-top:-280px;
+    width:800px;
+    margin-left:100px;
+
+    
+}
+.row .border1 h4{
+    font-size:30px;
+    font-weight:500;
+}
+.row .border1 h2{
+    font-size:50px;
+}
+
+ @media only screen and (max-width: 800px) {
+    .mainheading{
+        z-index: 6;
+        width: auto; 
+        margin-top:-700px;
+    }
+    .border1{
+        border-style: none;
+        border-width: 0px;
+        border-color:none !important;
+        background-color: transparent;
+        margin-top:500px;
+        height:auto;
+        width:auto;
+        margin-left:auto;
+    }
+    .mainheadingalign{
+        margin-top:-280px;
+        width:auto;
+        margin-left:auto;
+    
+        
+    }
+    .slide{
+        margin-top:90px;
+        /* height:250px; */
+    }
+
+}
+
+/*Carousel Css*/
+.parallax2 {
+    /* The image used */
+    background-image: url("images/parallax2.jpg");
+  
+    /* Set a specific height */
+    min-height: 680px; 
+    margin-top:130px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ .mas{
+     text-align:center;
+     margin-top:-600px;
+     color:white;
+ }
+ @media only screen and (max-width: 600px) {
+    .parallax2{
+        margin-top:30px;
+        height:2200px;
+    }
+    .mas{
+        margin-top:-2100px;
+    }
+}
+.row .mas h2{
+    font-weight:900;
+}
+.row .mas h4{
+    margin-top:30px;
+}
+
+
+
+
+
+/* equal card height */
+.row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+   width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.carousel-inner>.row-equal.active, 
+.carousel-inner>.row-equal.next, 
+.carousel-inner>.row-equal.prev {
+    display: flex;
+}
+
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left, 
+.carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
+.next{
+    margin-left:1040px;
+    border-color:white;
+}
+.prev{
+    border-color:white;
+}
+
+
+/* control image height */
+.card-img-top-250 {
+    
+    overflow:hidden;
+}
+
+.slide{
+    margin-top:-400px;
+   
+}
+.slide2{
+    margin-left:120px;
+}
+@media only screen and (max-width: 800px){
+.slide {
+    margin-left: 60px;
+    margin-top:-1800px;
+}
+.slide2{
+    margin-left:auto;
+}
+.next{
+    margin-left:auto;
+    
+}
+.card{
+    height:390px !important;
+}
+}
+.card-header{
+    font-weight: 900;
+    text-align: center;
+    font-size: 20px;
+}
+.card{
+    height:290px;
+}
+
+
+
+/*Carousel Slider Button*/
+.sliderbutton {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background:#ddd !important;
+    
+  }
+  
+  .sliderbutton:hover {
+    background-color: #ddd !important;
+    color: black !important;
+  }
+  
+  .prev {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
+
+/*Carousel Slider Button ends*/
+/*Carousel Css ends*/
+
